@@ -1,2 +1,2 @@
 const colors = require('colors');
-console.log(colors.blue('this is color package'));
+console.log(colors.red('this is color package'));

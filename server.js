@@ -1,5 +1,14 @@
 const http = require('http');
-http.createServer((req,res)=>{
-    res.write('<h1>this is write</h1>')
+
+const server = http.createServer((req,res)=>{
+    res.setHeader("Content-Type","text/html") //for explaing the page is html
+    res.write(`
+        <html>
+        <head></head>
+        <body>
+        </body>
+        </html
+        `)
     res.end('hello')
-}).listen(4800)
+})
+server.listen(4800)
