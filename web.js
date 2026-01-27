@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 http.createServer((req,res)=>{
-    fs.readFile('html/hhhome.html','utf-8',(err,data)=>{
+    fs.readFile('html/home.html','utf-8',(err,data)=>{
      if(err)
      {
         res.writeHead(500,{"content-type":'text/plain'})
